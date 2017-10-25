@@ -1,6 +1,6 @@
 <h1>InnoBox: Search for the Most Innovative Teaching and Learning Resources in Science</h1>
 <p>Git Repository for code and other resources related to the development of InnoBox</p>
-<h1>Parts used:</h1>
+<h1>Parts used</h1>
 <ul>
 	<li>Arduino Nano</li>
 	<li>XBee Shield</li>
