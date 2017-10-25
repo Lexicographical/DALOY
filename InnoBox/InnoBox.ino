@@ -1,8 +1,10 @@
 #include "Sensors.h"
 #include "Sensors_U.h"
 
+Sensors sensors;
+
 void setup() {
-  initSensors();
+  Serial.begin(9600);
 }
 
 void loop() {

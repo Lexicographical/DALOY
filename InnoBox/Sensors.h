@@ -10,17 +10,16 @@
 
 class Sensors {
 public:
-  Sensors(int pinDHT, int pinRX, int pinTX);
+  Sensors();
+  Sensors(int pinDHT);
   void readData();
   float getHumidity();
   float getTemperature();
   float getHeatIndex();
   float getPressure();
-  bool isDHTReady();
   
 private:
-  Adafruit_BMP085_Unified *bmp;// = Adafruit_BMP085_Unified(10085);
-  SoftwareSerial *bt;
+  Adafruit_BMP085_Unified *bmp;
   DHT *dht;
   float hum;
   float temp;
@@ -28,15 +27,5 @@ private:
   float pressure;
   bool toggleDHT;
 };
-
-Sensors::Sensors(int pinDHT, int pinRX, int pinTX) {
-  this->bmp = &Adafruit_BMP085_Unified(10085);
-  this->bt = &SoftwareSerial(pinTX, pinRX);
-  this->dht = &DHT(pinDHT, DHT22);
-}
-
-Sensors::readData() {
-  
-}
 
 #endif
