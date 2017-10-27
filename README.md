@@ -15,8 +15,8 @@
 <h1>Software/Libraries used</h1>
 <table>
 	<tr>
-		<td font-weight="bold">Library</td>
-		<td font-weight="bold">Source</td>
+		<td><strong>Library</strong></td>
+		<td><strong>Source</strong></td>
 	</tr>
 	<tr>
 		<td>Arduino.h</td>
