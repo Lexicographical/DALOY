@@ -4,11 +4,11 @@
 <h1>Parts used</h1>
 <ul>
 	<li>Arduino Uno</li>
+	<li>Raspberry Pi</li>
 	<li>XBee Shield</li>
-	<li>Motor Shield</li>
 	<li>DHT22</li>
 	<li>BMP180</li>
-	<li>OV7670 Camera</li>
+	<li>MPU6050 Gyroscope</li>
 </ul>
 <h1>Software/Libraries used</h1>
 <table>
