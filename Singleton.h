@@ -13,6 +13,9 @@ class Daloy {
   Comms getComms();
   DroneController getDroneController();
   Sensors getSensors();
+
+  private:
+  Daloy();
 }
 
 Comms Daloy::getComms() {
