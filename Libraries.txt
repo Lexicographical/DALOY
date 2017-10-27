@@ -1,7 +1,0 @@
-Arduino.h				default
-Wire.h					default
-Adafruit_Sensor.h		Adafruit BMP085
-Adafruit_BMP085_U.h		Adafruit BMP085
-DHT						DHT
-ESP8266Wifi.h			???
-ESP8266WebServer.h		???
