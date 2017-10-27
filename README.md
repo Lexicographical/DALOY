@@ -13,7 +13,7 @@
 <h1>Software/Libraries used</h1>
 <table>
 	<tr>
-		<td colspan="2" text-align="center"><strong>Drone Box</strong></td>
+		<td colspan="2" style="text-align: center"><strong>Drone Box</strong></td>
 	</tr>
 	<tr>
 		<td><strong>Library</strong></td>
