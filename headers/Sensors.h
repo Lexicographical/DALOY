@@ -9,7 +9,10 @@
 
 class Sensors {
 public:
-  static Sensors getInstance(int pinDHT);
+  static Sensors* getInstance() {
+    static Sensors instance;
+    return &instance;
+  }
   void readData();
   float getHumidity();
   float getTemperature();
@@ -17,10 +20,9 @@ public:
   float getPressure();
   
 private:
-  Sensors(int pinDHT);
-  static Sensors* instance = 0;
-  Adafruit_BMP085_Unified *bmp;
-  DHT *dht;
+  Sensors();
+  Adafruit_BMP085_Unified* bmp;
+  DHT* dht;
   float hum;
   float temp;
   float heatIndex;

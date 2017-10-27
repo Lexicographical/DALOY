@@ -1,20 +1,13 @@
 #ifndef SENSORS_U
 #define SENSORS_U
 
-Sensors::Sensors(int pinDHT) {
-  this->bmp = &Adafruit_BMP085_Unified(10085);
-  this->dht = &DHT(pinDHT, DHT22);
+Sensors::Sensors() {
+  this->bmp = new Adafruit_BMP085_Unified(10085);
+  this->dht = new DHT(PIN_DHT22, DHT22);
   this->toggleDHT = true;
   this->dht->begin();
   this->bmp->begin();
   delay(1000);
-}
-
-static Sensors Sensors::getInstance(int pinDHT) {
-  if (instance == 0) {
-    instance = &Sensors(pinDHT);
-  }
-  return instance;
 }
 
 void Sensors::readData() {

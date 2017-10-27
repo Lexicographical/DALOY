@@ -1,6 +1,7 @@
 #ifndef SINGLETON_H
 #define SINGLETON_H
 
+#include "Constants.h"
 #include "Comms.h"
 #include "Comms_U.h"
 #include "DroneController.h"
@@ -10,24 +11,21 @@
 
 class Daloy {
   public:
-  Comms getComms();
-  DroneController getDroneController();
-  Sensors getSensors();
+  static Comms* getComms();
+  static DroneController* getDroneController();
+  static Sensors* getSensors();
+};
 
-  private:
-  Daloy();
-}
-
-Comms Daloy::getComms() {
+Comms* Daloy::getComms() {
   return Comms::getInstance();
 }
 
-DroneController Daloy::getDroneController() {
+DroneController* Daloy::getDroneController() {
   return DroneController::getInstance();
 }
 
-Sensors Daloy::getSensors(int pinDHT) {
-  return Sensors::getInstance(pinDHT);
+Sensors* Daloy::getSensors() {
+  return Sensors::getInstance();
 }
 
 #endif

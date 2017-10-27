@@ -1,16 +1,7 @@
 #ifndef DRONE_CONTROLLER_U
 #define DRONE_CONTROLLER_U
 
-DroneController::DroneController(){
-  instance = this;
-}
-
-static DroneController DroneController::getInstance() {
-  if (instance == 0) {
-    instance = &DroneController();
-  }
-  return instance;
-}
+DroneController::DroneController() {}
 
 void DroneController::moveX(bool right) {
   this->x += right ? 1 : -1;
@@ -42,7 +33,7 @@ void DroneController::rotY(float rad) {
   }
 }
 
-void DroneController:rotZ(float rad) {
+void DroneController::rotZ(float rad) {
   this->pitch += rad;
   if (this->pitch > this->maxTilt) {
     this->pitch = this->maxTilt;

@@ -1,4 +1,4 @@
-#include "Singleton.h"
+#include "headers/Singleton.h"
 
 Comms* comms;
 DroneController* dc;
@@ -18,6 +18,5 @@ void setup() {
 }
 
 void loop() {
-  
 
 }

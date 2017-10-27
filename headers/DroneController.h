@@ -3,7 +3,10 @@
 
 class DroneController {
   public:
-    static DroneController getInstance();
+    static DroneController* getInstance() {
+        static DroneController instance;
+        return &instance;
+    }
     void moveX(bool right);
     void moveY(bool up);
     void moveZ(bool front);
@@ -15,7 +18,6 @@ class DroneController {
 
   private:
     DroneController();
-    static DroneController* instance = 0;
     float x;
     float y;
     float z;
