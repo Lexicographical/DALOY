@@ -1,7 +1,16 @@
 #ifndef DRONE_CONTROLLER_U
 #define DRONE_CONTROLLER_U
 
-DroneController::DroneController(){}
+DroneController::DroneController(){
+  instance = this;
+}
+
+static DroneController DroneController::getInstance() {
+  if (instance == 0) {
+    instance = &DroneController();
+  }
+  return instance;
+}
 
 void DroneController::moveX(bool right) {
   this->x += right ? 1 : -1;

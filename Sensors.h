@@ -6,12 +6,10 @@
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BMP085_U.h>
 #include <DHT.h>
-#include <SoftwareSerial.h>
 
 class Sensors {
 public:
-  Sensors();
-  Sensors(int pinDHT);
+  static Sensors getInstance(int pinDHT);
   void readData();
   float getHumidity();
   float getTemperature();
@@ -19,6 +17,8 @@ public:
   float getPressure();
   
 private:
+  Sensors(int pinDHT);
+  static Sensors* instance = 0;
   Adafruit_BMP085_Unified *bmp;
   DHT *dht;
   float hum;
