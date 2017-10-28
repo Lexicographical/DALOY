@@ -1,23 +1,26 @@
+
 <h1>Project Daloy<br>
-*D*rone-based depth and *A*tmospheric *L*evel *O*pen-source monitoring device for the Filipino *Y*outh</h1>
-<p>Git Repository for code and other resources related to the development of *Project Daloy*, the official entry of PSHS-CVisC to *InnoBox: Search for the Most Innovative Teaching and Learning Resources in Science*</p>
+<strong>D</strong>rone-based depth and <strong>A</strong>tmospheric <strong>L</strong>evel <strong>O</strong>pen-source monitoring device for the Filipino <strong>Y</strong>outh</h1>
+<p>Git Repository for code and other resources related to the development of <strong>Project Daloy</strong>, the official entry of PSHS-CVisC to <strong>InnoBox: Search for the Most Innovative Teaching and Learning Resources in Science</strong></p>
 <h1>Parts used</h1>
-	*Arduino Uno
-	*Raspberry Pi
-	*XBee Shield
-	*DHT22
-	*BMP180
-	*MPU6050 Gyroscope
+<ul>
+	<li>Arduino Uno</li>
+	<li>Raspberry Pi</li>
+	<li>XBee Shield</li>
+	<li>DHT22</li>
+	<li>BMP180</li>
+	<li>MPU6050 Gyroscope</li>
+</ul>
 <h1>Materials List and Budgetary Requirements</h1>
 <table>
 	<tr>
-		<td colspan="4" text-align>*Drone*</td>
+		<td colspan="4" style="text-align: center"><strong>Drone</strong></td>
 	</tr>
 	<tr>
-		<td>*Material*</td>
-		<td>*Unit Cost*</td>
-		<td>*Quantity*</td>
-		<td>*Price*</td>
+		<td><strong>Material</strong></td>
+		<td><strong>Unit Cost</strong></td>
+		<td><strong>Quantity</strong></td>
+		<td><strong>Price</strong></td>
 	</tr>
 	<tr>
 		<td>Arduino Nano</td>
@@ -74,18 +77,24 @@
 		<td>2000</td>
 	</tr>
 	<tr>
-		<td colspan="2">*Subtotal*</td>
-		<td colspan="2">15400</td>
+		<td>Li-Po Battery 7.4V / 11.1V</td>
+		<td>330</td>
+		<td>1</td>
+		<td>330</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
+		<td colspan="2" style="text-align: right">15730</td>
 	</tr>
 </table>
 <h1>Software/Libraries used</h1>
 <table>
 	<tr>
-		<td colspan="2" style="text-align: center">*Drone Box*</td>
+		<td colspan="2" style="text-align: center"><strong>Drone Box</strong></td>
 	</tr>
 	<tr>
-		<td>*Library*</td>
-		<td>*Source*</td>
+		<td><strong>Library</strong></td>
+		<td><strong>Source</strong></td>
 	</tr>
 	<tr>
 		<td>Arduino.h</td>
