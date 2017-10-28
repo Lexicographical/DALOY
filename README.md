@@ -14,7 +14,7 @@
 <h1>Materials List and Budgetary Requirements</h1>
 <table>
 	<tr>
-		<td colspan="4" style="text-align: center"><strong>Drone</strong></td>
+		<td colspan="4" style="text-align: center"><strong>Daloy Air (Drone)</strong></td>
 	</tr>
 	<tr>
 		<td><strong>Material</strong></td>
@@ -87,6 +87,87 @@
 		<td colspan="2" style="text-align: right">15730</td>
 	</tr>
 </table>
+<table>
+	<tr>
+		<td colspan="4" style="text-align: center"><strong>Daloy Ground (Main)</strong></td>
+	</tr>
+	<tr>
+		<td><strong>Material</strong></td>
+		<td><strong>Unit Cost</strong></td>
+		<td><strong>Quantity</strong></td>
+		<td><strong>Price</strong></td>
+	</tr>
+	<tr>
+		<td>Raspberry Pi 3</td>
+		<td>2400</td>
+		<td>1</td>
+		<td>2400</td>
+	</tr>
+	<tr>
+		<td>NRF24L01</td>
+		<td>100</td>
+		<td>1</td>
+		<td>100</td>
+	</tr>
+	<tr>
+		<td>Solar Panel</td>
+		<td>2000</td>
+		<td>1</td>
+		<td>2000</td>
+	</tr>
+	<tr>
+		<td>Charging Station</td>
+		<td>???</td>
+		<td>1</td>
+		<td>???</td>
+	</tr>
+	<tr>
+		<td>Case / Body</td>
+		<td>1000</td>
+		<td>1</td>
+		<td>1000</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
+		<td colspan="2" style="text-align: right">5500</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td colspan="4" style="text-align: center"><strong>Controller</strong></td>
+	</tr>
+	<tr>
+		<td><strong>Material</strong></td>
+		<td><strong>Unit Cost</strong></td>
+		<td><strong>Quantity</strong></td>
+		<td><strong>Price</strong></td>
+	</tr>
+	<tr>
+		<td>Arduino Nano</td>
+		<td>350</td>
+		<td>1</td>
+		<td>350</td>
+	</tr>
+	<tr>
+		<td>NRF24L01</td>
+		<td>100</td>
+		<td>1</td>
+		<td>100</td>
+	</tr>
+	<tr>
+		<td>Li-Po Battery 7.4V / 11.1V</td>
+		<td>330</td>
+		<td>1</td>
+		<td>330</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
+		<td colspan="2" style="text-align: right">780</td>
+	</tr>
+</table>
+
+# Total: 22010
+
 <h1>Software/Libraries used</h1>
 <table>
 	<tr>
