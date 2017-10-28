@@ -26,10 +26,10 @@
 		<td>200</td>
 	</tr>
 	<tr>
-		<td>Multiwii Flight Controller</td>
-		<td>1500</td>
+		<td>MPU6050 Gyro+Accelerometer</td>
+		<td>300</td>
 		<td>1</td>
-		<td>1500</td>
+		<td>300</td>
 	</tr>
 	<tr>
 		<td>DHT-22 Humidity</td>
@@ -75,7 +75,7 @@
 	</tr>
 	<tr>
 		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
-		<td colspan="2" style="text-align: right">15730</td>
+		<td colspan="2" style="text-align: right">14530</td>
 	</tr>
 </table>
 <table>
@@ -157,7 +157,7 @@
 	</tr>
 </table>
 
-# Total: 22010
+# Total: 20810
 
 <h1>Proposed Design</h1>
 ![](Project Daloy.png)
