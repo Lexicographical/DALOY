@@ -10,6 +10,70 @@
 	<li>BMP180</li>
 	<li>MPU6050 Gyroscope</li>
 </ul>
+<h1>Materials List and Budgetary Requirements</h1>
+<table>
+	<tr>
+		<td colspan="4" style="text-align: center"><strong>Drone</strong></td>
+	</tr>
+	<tr>
+		<td><strong>Material</strong></td>
+		<td><strong>Unit Cost</strong></td>
+		<td><strong>Quantity</strong></td>
+		<td><strong>Price</strong></td>
+	</tr>
+	<tr>
+		<td>Arduino Nano</td>
+		<td>350</td>
+		<td>2</td>
+		<td>1050</td>
+	</tr>
+	<tr>
+		<td>NRF24L01</td>
+		<td>100</td>
+		<td>2</td>
+		<td>200</td>
+	</tr>
+	<tr>
+		<td>Multiwii Flight Controller</td>
+		<td>1500</td>
+		<td>1</td>
+		<td>1500</td>
+	</tr>
+	<tr>
+		<td>DHT-22 Humidity</td>
+		<td>350</td>
+		<td>1</td>
+		<td>350</td>
+	</tr>
+	<tr>
+		<td>BMP180 Barometric + Temp</td>
+		<td>300</td>
+		<td>1</td>
+		<td>300</td>
+	</tr>
+	<tr>
+		<td>Camera</td>
+		<td>???</td>
+		<td>1</td>
+		<td>???</td>
+	</tr>
+	<tr>
+		<td>ESC Brushless Motor</td>
+		<td>1000</td>
+		<td>4</td>
+		<td>4000</td>
+	</tr>
+	<tr>
+		<td>Case / Body</td>
+		<td>2000</td>
+		<td>1</td>
+		<td>2000</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
+		<td colspan="2" style="text-align: right">9400</td>
+	</tr>
+</table>
 <h1>Software/Libraries used</h1>
 <table>
 	<tr>
@@ -38,14 +102,6 @@
 	<tr>
 		<td>DHT.h</td>
 		<td>DHT Sensor Library</td>
-	</tr>
-	<tr>
-		<td>ESP8266Wifi.h</td>
-		<td>???</td>
-	</tr>
-	<tr>
-		<td>ESP8266WebServer.h</td>
-		<td>???</td>
 	</tr>
 </table>
 <h1>Proposed Design</h1>
