@@ -168,35 +168,5 @@
 
 # Total: 22010
 
-<h1>Software/Libraries used</h1>
-<table>
-	<tr>
-		<td colspan="2" style="text-align: center"><strong>Drone Box</strong></td>
-	</tr>
-	<tr>
-		<td><strong>Library</strong></td>
-		<td><strong>Source</strong></td>
-	</tr>
-	<tr>
-		<td>Arduino.h</td>
-		<td>Arduino built-in</td>
-	</tr>
-	<tr>
-		<td>Wire.h</td>
-		<td>Arduino built-in</td>
-	</tr>
-	<tr>
-		<td>Adafruit_Sensor.h</td>
-		<td>Adafruit BMP085 Library</td>
-	</tr>
-	<tr>
-		<td>Adafruit_BMP085_U.h</td>
-		<td>Adafruit BMP085 Unified</td>
-	</tr>
-	<tr>
-		<td>DHT.h</td>
-		<td>DHT Sensor Library</td>
-	</tr>
-</table>
 <h1>Proposed Design</h1>
 ![](Project Daloy.png)
