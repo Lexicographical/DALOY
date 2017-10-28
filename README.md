@@ -158,6 +158,81 @@
 </table>
 
 # Total: 20810
-
+<h1>Mass of Drone</h1>
+<table>
+	<tr>
+		<td colspan="4" style="text-align: center"><strong>Daloy Air (Drone)</strong></td>
+	</tr>
+	<tr>
+		<td><strong>Material</strong></td>
+		<td><strong>Unit Mass (g)</strong></td>
+		<td><strong>Quantity</strong></td>
+		<td><strong>Mass (g)</strong></td>
+	</tr>
+	<tr>
+		<td>Arduino Nano</td>
+		<td>6</td>
+		<td>2</td>
+		<td>12</td>
+	</tr>
+	<tr>
+		<td>NRF24L01</td>
+		<td>6</td>
+		<td>2</td>
+		<td>12</td>
+	</tr>
+	<tr>
+		<td>MPU6050 Gyro+Accelerometer</td>
+		<td>15</td>
+		<td>1</td>
+		<td>15</td>
+	</tr>
+	<tr>
+		<td>DHT-22 Humidity</td>
+		<td>2.4</td>
+		<td>1</td>
+		<td>2.4</td>
+	</tr>
+	<tr>
+		<td>BMP180 Barometric + Temp</td>
+		<td>4</td>
+		<td>1</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>Camera</td>
+		<td>150</td>
+		<td>1</td>
+		<td>150</td>
+	</tr>
+	<tr>
+		<td>Electronic Brushless Motor Speed Controller ESC</td>
+		<td>22</td>
+		<td>4</td>
+		<td>88</td>
+	</tr>
+	<tr>
+		<td>Brushless Motors</td>
+		<td>50</td>
+		<td>4</td>
+		<td>200</td>
+	</tr>
+	<tr>
+		<td>Case / Body</td>
+		<td>88</td>
+		<td>1</td>
+		<td>100</td>
+	</tr>
+	<tr>
+		<td>Li-Po Battery 7.4V / 11.1V</td>
+		<td>77</td>
+		<td>1</td>
+		<td>77</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align: center"><strong>Total</strong></td>
+		<td colspan="2" style="text-align: right">660.4</td>
+	</tr>
+</table>
 <h1>Proposed Design</h1>
 ![](Project Daloy.png)
