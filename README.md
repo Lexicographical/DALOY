@@ -199,7 +199,7 @@
 		<td>15</td>
 	</tr>
 	<tr>
-		<td>DHT-22 Humidity</td>
+		<td>DHT-11 Humidity</td>
 		<td>2.4</td>
 		<td>1</td>
 		<td>2.4</td>
@@ -232,7 +232,7 @@
 		<td>Case / Body</td>
 		<td>88</td>
 		<td>1</td>
-		<td>100</td>
+		<td>88</td>
 	</tr>
 	<tr>
 		<td>Li-Po Battery 7.4V / 11.1V</td>
@@ -242,8 +242,9 @@
 	</tr>
 	<tr>
 		<td colspan="2" style="text-align: center"><strong>Total</strong></td>
-		<td colspan="2" style="text-align: right">660.4</td>
+		<td colspan="2" style="text-align: right">648.7</td>
 	</tr>
 </table>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSS6ToVy87a9gX5PzLMd3oJEHXgL5TcInsBH1M7qAhfMU53YpJAK91GBj8-CRD1eSm4aerfLKCVL-QF/pubhtml?widget=true&amp;headers=false"></iframe>
 <h1>Proposed Design</h1>
 ![](Project Daloy.png)
