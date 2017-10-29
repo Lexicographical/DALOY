@@ -168,7 +168,7 @@
 	</tr>
 </table>
 
-# Total: 14260
+# Grand Total: 22690
 <h1>Mass of Drone</h1>
 <table>
 	<tr>
