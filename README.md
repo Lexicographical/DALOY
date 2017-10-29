@@ -44,9 +44,9 @@
 	</tr>
 	<tr>
 		<td>Camera</td>
-		<td>0</td>
+		<td>2000</td>
 		<td>1</td>
-		<td>0</td>
+		<td>2000</td>
 	</tr>
 	<tr>
 		<td>Electronic Brushless Motor Speed Controller ESC</td>
@@ -80,7 +80,7 @@
 	</tr>
 	<tr>
 		<td colspan="3">Subtotal</td>
-		<td>14680</td>
+		<td>16680</td>
 	</tr>
 </table>
 <table>
@@ -167,7 +167,7 @@
 		<td>2780</td>
 	</tr>
 </table>
-# Grand Total: 22960
+# Grand Total: 24960
 
 <h1>Mass of Drone</h1>
 <table>
