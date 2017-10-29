@@ -4,7 +4,7 @@
 <h1>Materials List and Budgetary Requirements</h1>
 <table>
 	<tr>
-		<td colspan="4" style="text-align: center"><strong>Daloy Air (Drone)</strong></td>
+		<td colspan = "4">Daloy Air (Drone)</td>
 	</tr>
 	<tr>
 		<td><strong>Material</strong></td>
@@ -25,7 +25,7 @@
 		<td>200</td>
 	</tr>
 	<tr>
-		<td>MPU6050 Gyro+Accelerometer</td>
+		<td>MPU6050 Gyro + Accelerometer</td>
 		<td>300</td>
 		<td>1</td>
 		<td>300</td>
@@ -44,21 +44,21 @@
 	</tr>
 	<tr>
 		<td>Camera</td>
-		<td>???</td>
+		<td>0</td>
 		<td>1</td>
-		<td>???</td>
+		<td>0</td>
 	</tr>
 	<tr>
 		<td>Electronic Brushless Motor Speed Controller ESC</td>
-		<td>400</td>
+		<td>1800</td>
 		<td>4</td>
-		<td>1600</td>
+		<td>7200</td>
 	</tr>
 	<tr>
-		<td>Brushless Motors Set x4 </td>
-		<td>1500</td>
-		<td>1</td>
-		<td>1500</td>
+		<td>Brushless Motors</td>
+		<td>700</td>
+		<td>4</td>
+		<td>2800</td>
 	</tr>
 	<tr>
 		<td>Case / Body</td>
@@ -73,19 +73,19 @@
 		<td>330</td>
 	</tr>
 	<tr>
-		<td>Delivery Charge </td>
+		<td>Delivery Charge</td>
 		<td>700</td>
 		<td>1</td>
 		<td>700</td>
 	</tr>
 	<tr>
-		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
-		<td colspan="2" style="text-align: right">14680</td>
+		<td colspan="3">Subtotal</td>
+		<td>14680</td>
 	</tr>
 </table>
 <table>
 	<tr>
-		<td colspan="4" style="text-align: center"><strong>Daloy Ground (Main)</strong></td>
+		<td colspan = "4">Daloy Ground (Main)</td>
 	</tr>
 	<tr>
 		<td><strong>Material</strong></td>
@@ -113,9 +113,9 @@
 	</tr>
 	<tr>
 		<td>Charging Station</td>
-		<td>???</td>
+		<td>0</td>
 		<td>1</td>
-		<td>???</td>
+		<td>0</td>
 	</tr>
 	<tr>
 		<td>Case / Body</td>
@@ -124,13 +124,13 @@
 		<td>1000</td>
 	</tr>
 	<tr>
-		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
-		<td colspan="2" style="text-align: right">5500</td>
+		<td colspan="3">Subtotal</td>
+		<td>5500</td>
 	</tr>
 </table>
 <table>
 	<tr>
-		<td colspan="4" style="text-align: center"><strong>Controller and Users</strong></td>
+		<td colspan = "4">Daloy Air Controller</td>
 	</tr>
 	<tr>
 		<td><strong>Material</strong></td>
@@ -163,12 +163,12 @@
 		<td>2000</td>
 	</tr>
 	<tr>
-		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
-		<td colspan="2" style="text-align: right">2780</td>
+		<td colspan="3">Subtotal</td>
+		<td>2780</td>
 	</tr>
 </table>
+# Grand Total: 22960
 
-# Grand Total: 22690
 <h1>Mass of Drone</h1>
 <table>
 	<tr>

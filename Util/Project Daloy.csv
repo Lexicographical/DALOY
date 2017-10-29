@@ -1,0 +1,30 @@
+Daloy Air (Drone),,,
+Material,Unit Cost,Quantity,Price
+Arduino Nano,350,2,700
+NRF24L01,100,2,200
+MPU6050 Gyro + Accelerometer,300,1,300
+DHT-11 Humidity,150,1,150
+BMP180 Barometric + Temp,300,1,300
+Camera,0,1,0
+Electronic Brushless Motor Speed Controller ESC,1800,4,7200
+Brushless Motors,700,4,2800
+Case / Body,2000,1,2000
+Li-Po Battery 7.4V / 11.1V,330,1,330
+Delivery Charge,700,1,700
+Subtotal,,,14680
+Daloy Ground (Main),,,
+Material,Unit Cost,Quantity,Price
+Raspberry Pi 3,2400,1,2400
+NRF24L01,100,1,100
+Solar Panel,2000,1,2000
+Charging Station,0,1,0
+Case / Body,1000,1,1000
+Subtotal,,,5500
+Daloy Air Controller,,,
+Material,Unit Cost,Quantity,Price
+Arduino Nano,350,1,350
+NRF24L01,100,1,100
+Li-Po Battery 7.4V / 11.1V,330,1,330
+Android Phone,2000,1,2000
+Subtotal,,,2780
+Grand Total,,,22960
