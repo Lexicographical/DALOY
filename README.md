@@ -17,7 +17,7 @@
 		<td>Arduino Nano</td>
 		<td>350</td>
 		<td>2</td>
-		<td>1050</td>
+		<td>700</td>
 	</tr>
 	<tr>
 		<td>NRF24L01</td>
@@ -32,10 +32,10 @@
 		<td>300</td>
 	</tr>
 	<tr>
-		<td>DHT-22 Humidity</td>
-		<td>350</td>
+		<td>DHT-11 Humidity</td>
+		<td>150</td>
 		<td>1</td>
-		<td>350</td>
+		<td>150</td>
 	</tr>
 	<tr>
 		<td>BMP180 Barometric + Temp</td>
@@ -75,7 +75,7 @@
 	</tr>
 	<tr>
 		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
-		<td colspan="2" style="text-align: right">14530</td>
+		<td colspan="2" style="text-align: right">13980</td>
 	</tr>
 </table>
 <table>
@@ -125,7 +125,7 @@
 </table>
 <table>
 	<tr>
-		<td colspan="4" style="text-align: center"><strong>Controller</strong></td>
+		<td colspan="4" style="text-align: center"><strong>Controller and Users</strong></td>
 	</tr>
 	<tr>
 		<td><strong>Material</strong></td>
@@ -152,8 +152,14 @@
 		<td>330</td>
 	</tr>
 	<tr>
+		<td>Android Phone</td>
+		<td>2000</td>
+		<td>1</td>
+		<td>2000</td>
+	</tr>
+	<tr>
 		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
-		<td colspan="2" style="text-align: right">780</td>
+		<td colspan="2" style="text-align: right">2780</td>
 	</tr>
 </table>
 
