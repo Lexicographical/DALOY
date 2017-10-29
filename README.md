@@ -2,15 +2,6 @@
 <strong>D</strong>rone-based depth and <strong>A</strong>tmospheric <strong>L</strong>evel <strong>O</strong>pen-source monitoring device for the Filipino <strong>Y</strong>outh</h1>
 <p>Git Repository for code and other resources related to the development of <strong>Project Daloy</strong>, the official entry of PSHS-CVisC to <strong>InnoBox: Search for the Most Innovative Teaching and Learning Resources in Science</strong></p>
 <h1>Materials List and Budgetary Requirements</h1>
-
-<figure class = "video_container">
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSS6ToVy87a9gX5PzLMd3oJEHXgL5TcInsBH1M7qAhfMU53YpJAK91GBj8-CRD1eSm4aerfLKCVL-QF/pubhtml?gid=788482964&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-</figure>
-
-<figure class="video_container">
-<iframe src="https://docs.google.com/spreadsheets/d/1jAnvYpRmNu8BISIrkYGTLolOTmlCoKLbuHVWzCXJSY4/pubhtml?widget=true&amp;headers=false"></iframe>
-</figure>
-
 <table>
 	<tr>
 		<td colspan="4" style="text-align: center"><strong>Daloy Air (Drone)</strong></td>
