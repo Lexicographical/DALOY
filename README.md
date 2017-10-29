@@ -1,4 +1,3 @@
-
 <h1>Project Daloy<br>
 <strong>D</strong>rone-based depth and <strong>A</strong>tmospheric <strong>L</strong>evel <strong>O</strong>pen-source monitoring device for the Filipino <strong>Y</strong>outh</h1>
 <p>Git Repository for code and other resources related to the development of <strong>Project Daloy</strong>, the official entry of PSHS-CVisC to <strong>InnoBox: Search for the Most Innovative Teaching and Learning Resources in Science</strong></p>
@@ -51,15 +50,15 @@
 	</tr>
 	<tr>
 		<td>Electronic Brushless Motor Speed Controller ESC</td>
-		<td>1800</td>
+		<td>400</td>
 		<td>4</td>
-		<td>7200</td>
+		<td>1600</td>
 	</tr>
 	<tr>
-		<td>Brushless Motors</td>
-		<td>700</td>
-		<td>4</td>
-		<td>2800</td>
+		<td>Brushless Motors Set x4 </td>
+		<td>1500</td>
+		<td>1</td>
+		<td>1500</td>
 	</tr>
 	<tr>
 		<td>Case / Body</td>
@@ -74,8 +73,14 @@
 		<td>330</td>
 	</tr>
 	<tr>
+		<td>Delivery Charge </td>
+		<td>700</td>
+		<td>1</td>
+		<td>700</td>
+	</tr>
+	<tr>
 		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
-		<td colspan="2" style="text-align: right">13980</td>
+		<td colspan="2" style="text-align: right">14680</td>
 	</tr>
 </table>
 <table>
@@ -163,7 +168,7 @@
 	</tr>
 </table>
 
-# Total: 20810
+# Total: 14260
 <h1>Mass of Drone</h1>
 <table>
 	<tr>
