@@ -7,6 +7,10 @@
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSS6ToVy87a9gX5PzLMd3oJEHXgL5TcInsBH1M7qAhfMU53YpJAK91GBj8-CRD1eSm4aerfLKCVL-QF/pubhtml?gid=788482964&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 </figure>
 
+<figure class="video_container">
+<iframe src="https://docs.google.com/spreadsheets/d/1jAnvYpRmNu8BISIrkYGTLolOTmlCoKLbuHVWzCXJSY4/pubhtml?widget=true&amp;headers=false"></iframe>
+</figure>
+
 <table>
 	<tr>
 		<td colspan="4" style="text-align: center"><strong>Daloy Air (Drone)</strong></td>
