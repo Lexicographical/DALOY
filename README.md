@@ -245,6 +245,9 @@
 		<td colspan="2" style="text-align: right">648.7</td>
 	</tr>
 </table>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSS6ToVy87a9gX5PzLMd3oJEHXgL5TcInsBH1M7qAhfMU53YpJAK91GBj8-CRD1eSm4aerfLKCVL-QF/pubhtml?widget=true&amp;headers=false"></iframe>
+<figure>
+	<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSS6ToVy87a9gX5PzLMd3oJEHXgL5TcInsBH1M7qAhfMU53YpJAK91GBj8-CRD1eSm4aerfLKCVL-QF/pubhtml?widget=true&amp;headers=false"></iframe>
+</figure>
+
 <h1>Proposed Design</h1>
 ![](Project Daloy.png)
