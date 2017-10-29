@@ -50,15 +50,15 @@
 	</tr>
 	<tr>
 		<td>Electronic Brushless Motor Speed Controller ESC</td>
-		<td>1500</td>
+		<td>400</td>
 		<td>4</td>
-		<td>6000</td>
+		<td>1600</td>
 	</tr>
 	<tr>
-		<td>Brushless Motors</td>
-		<td>700</td>
-		<td>4</td>
-		<td>2800</td>
+		<td>Brushless Motors Set x4 </td>
+		<td>1500</td>
+		<td>1</td>
+		<td>1500</td>
 	</tr>
 	<tr>
 		<td>Case / Body</td>
@@ -73,8 +73,14 @@
 		<td>330</td>
 	</tr>
 	<tr>
+		<td>Delivery Charge </td>
+		<td>700</td>
+		<td>1</td>
+		<td>700</td>
+	</tr>
+	<tr>
 		<td colspan="2" style="text-align: center"><strong>Subtotal</strong></td>
-		<td colspan="2" style="text-align: right">12980</td>
+		<td colspan="2" style="text-align: right">7980</td>
 	</tr>
 </table>
 <table>
@@ -156,7 +162,7 @@
 	</tr>
 </table>
 
-# Total: 19260
+# Total: 14260
 <h1>Mass of Drone</h1>
 <table>
 	<tr>
