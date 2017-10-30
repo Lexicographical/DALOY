@@ -74,7 +74,7 @@
 	</tr>
 	<tr>
 		<td colspan="3">Subtotal</td>
-		<td>16680</td>
+		<td>11030</td>
 	</tr>
 </table>
 <table>
@@ -150,7 +150,7 @@
 		<td>1</td>
 		<td>150</td>
 	</tr>
-		<tr>
+	<tr>
 		<td>BMP180 Barometric + Temp</td>
 		<td>590</td>
 		<td>1</td>
@@ -164,7 +164,7 @@
 	</tr>
 	<tr>
 		<td colspan="3">Subtotal</td>
-		<td>2780</td>
+		<td>3190</td>
 	</tr>
 </table>
 <table>
@@ -176,6 +176,12 @@
 		<td><strong>Unit Cost</strong></td>
 		<td><strong>Quantity</strong></td>
 		<td><strong>Price</strong></td>
+	</tr>
+	<tr>
+	    <td>Case</td>
+		<td>3000</td>
+		<td>1</td>
+		<td>3000</td>
 	</tr>
 	<tr>
 	    <td>Syringe</td>
@@ -190,10 +196,10 @@
 		<td>525</td>
 	</tr>
 	<tr>
-	    <td>DS18B20 Temperature sensor (Waterproof)</td>
-		<td>199</td>
-		<td>1</td>
-		<td>199</td>
+	    <td>Rope</td>
+		<td>???</td>
+		<td>???</td>
+		<td>???</td>
 	</tr>
 	<tr>
 	    <td>DS18B20 Temperature sensor (Waterproof)</td>
@@ -201,9 +207,19 @@
 		<td>1</td>
 		<td>199</td>
 	</tr>
+	<tr>
+		<td>BMP180 Barometric + Temp</td>
+		<td>590</td>
+		<td>1</td>
+		<td>590</td>
+	</tr>
+	<tr>
+		<td colspan="3">Subtotal</td>
+		<td>4374</td>
+	</tr>
 </table>
 	
-# Grand Total: 24960
+# Grand Total: 24904
 
 <h1>Mass of Drone</h1>
 <table>
