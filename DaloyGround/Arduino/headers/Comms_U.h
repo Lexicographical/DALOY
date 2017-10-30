@@ -24,7 +24,9 @@ Comms::Comms() {
 	this->radio = new RF24(rfpins[0], rfpins[1]);
 
 	radio.begin();
-	radio.openReadingPipe(1, pipe);
+	radio.setAutoAck(false);
+	radio.setDataRate(RF24_250KBPS);
+	radio.openReadingPipe(1, uuid);
 
 	Wifi.mode(WIFI_AP);
 	WiFi.softAP(SSID, password);
