@@ -15,8 +15,8 @@
 	<tr>
 		<td>Arduino Nano</td>
 		<td>350</td>
-		<td>2</td>
-		<td>700</td>
+		<td>3</td>
+		<td>1050</td>
 	</tr>
 	<tr>
 		<td>NRF24L01</td>
@@ -30,19 +30,7 @@
 		<td>1</td>
 		<td>300</td>
 	</tr>
-	<tr>
-		<td>DHT-11 Humidity</td>
-		<td>150</td>
-		<td>1</td>
-		<td>150</td>
-	</tr>
-	<tr>
-		<td>BMP180 Barometric + Temp</td>
-		<td>300</td>
-		<td>1</td>
-		<td>300</td>
-	</tr>
-	<tr>
+    <tr>
 		<td>Camera</td>
 		<td>2000</td>
 		<td>1</td>
@@ -50,15 +38,21 @@
 	</tr>
 	<tr>
 		<td>Electronic Brushless Motor Speed Controller ESC</td>
-		<td>1800</td>
+		<td>490</td>
 		<td>4</td>
-		<td>7200</td>
+		<td>1960</td>
 	</tr>
 	<tr>
 		<td>Brushless Motors</td>
-		<td>700</td>
+		<td>375</td>
 		<td>4</td>
-		<td>2800</td>
+		<td>1500</td>
+	</tr>
+	<tr>
+		<td>Propellers Set</td>
+		<td>370</td>
+		<td>1</td>
+		<td>370</td>
 	</tr>
 	<tr>
 		<td>Case / Body</td>
@@ -68,9 +62,9 @@
 	</tr>
 	<tr>
 		<td>Li-Po Battery 7.4V / 11.1V</td>
-		<td>330</td>
+		<td>950</td>
 		<td>1</td>
-		<td>330</td>
+		<td>950</td>
 	</tr>
 	<tr>
 		<td>Delivery Charge</td>
@@ -130,7 +124,7 @@
 </table>
 <table>
 	<tr>
-		<td colspan = "4">Daloy Air Controller</td>
+		<td colspan = "4">Daloy Brain</td>
 	</tr>
 	<tr>
 		<td><strong>Material</strong></td>
@@ -151,10 +145,16 @@
 		<td>100</td>
 	</tr>
 	<tr>
-		<td>Li-Po Battery 7.4V / 11.1V</td>
-		<td>330</td>
+		<td>DHT-11 Humidity</td>
+		<td>150</td>
 		<td>1</td>
-		<td>330</td>
+		<td>150</td>
+	</tr>
+		<tr>
+		<td>BMP180 Barometric + Temp</td>
+		<td>590</td>
+		<td>1</td>
+		<td>590</td>
 	</tr>
 	<tr>
 		<td>Android Phone</td>
@@ -167,6 +167,42 @@
 		<td>2780</td>
 	</tr>
 </table>
+<table>
+	<tr>
+		<td colspan = "4">Daloy Water (ROV)</td>
+	</tr>
+	<tr>
+		<td><strong>Material</strong></td>
+		<td><strong>Unit Cost</strong></td>
+		<td><strong>Quantity</strong></td>
+		<td><strong>Price</strong></td>
+	</tr>
+	<tr>
+	    <td>Syringe</td>
+		<td>20</td>
+		<td>3</td>
+		<td>60</td>
+	</tr>
+	<tr>
+	    <td>Servo</td>
+		<td>525</td>
+		<td>1</td>
+		<td>525</td>
+	</tr>
+	<tr>
+	    <td>DS18B20 Temperature sensor (Waterproof)</td>
+		<td>199</td>
+		<td>1</td>
+		<td>199</td>
+	</tr>
+	<tr>
+	    <td>DS18B20 Temperature sensor (Waterproof)</td>
+		<td>199</td>
+		<td>1</td>
+		<td>199</td>
+	</tr>
+</table>
+	
 # Grand Total: 24960
 
 <h1>Mass of Drone</h1>
