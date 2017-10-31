@@ -28,3 +28,4 @@ while cmd != "exit":
 	elif toks[0] == "b":
 		pin = 23
 	GPIO.output(pin, int(toks[1]))
+	cmd = raw_input("RGB & Power: ")
