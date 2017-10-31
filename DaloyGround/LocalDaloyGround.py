@@ -53,7 +53,9 @@ def writeFile():
 
 def blinkIP():
 	ipstr = commands.getoutput("hostname -I")
+	print(ipstr)
 	octets = [int(i) for i in ipstr.split(".")]
+	print(octets)
 	for octet in octets:
 		blink(leds)
 		for i in range(octet):
