@@ -38,7 +38,6 @@ def shutdown():
 	global duration
 	led(leds, False)
 	led(leds[1]) # green light after initialization
-	GPIO.cleanup()
 
 def writeFile():
 	f = open("test.txt", "w")
