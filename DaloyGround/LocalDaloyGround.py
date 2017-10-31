@@ -10,7 +10,7 @@ lcd_d5        = 33
 lcd_d6        = 35
 lcd_d7        = 37
 lcd_backlight = 26
-lcd = Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, 16, 2, lcd_backlight)
+lcd = None
 
 duration = 0.5
 leds = [11, 13, 23, 21, 19]
@@ -23,14 +23,15 @@ def led(pin, on = True):
 	GPIO.output(pin, on)
 
 def startup():
-	global duration
-	lcd.begin(16,2)
-	lcd.clear()
-	lcd.message("Initializing...")
+	global duration, lcd
 	GPIO.setmode(GPIO.BOARD)
 	for l in leds:
 		GPIO.setup(l, GPIO.OUT)
 	led(leds[0]) # red light during initialization
+	
+	lcd = Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, 16, 2, lcd_backlight)
+	lcd.clear()
+	lcd.message("Initializing...")
 	delay(duration)
 
 def shutdown():
