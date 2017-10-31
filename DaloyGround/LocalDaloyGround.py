@@ -60,6 +60,7 @@ def blinkIP():
 			h = i / 100
 			t = (i % 100) / 10
 			o = (i % 10)
+			print([h, t, o])
 			blink(leds[2:5])
 			blink(leds[2], h)
 			blink(leds[3], t)
