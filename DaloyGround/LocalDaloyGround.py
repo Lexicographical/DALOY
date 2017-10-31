@@ -35,8 +35,6 @@ def startup():
 
 def shutdown():
 	global duration
-	lcd.clear()
-	lcd.message("Shutdown...")
 	led(leds, False)
 	led(leds[1]) # green light after initialization
 	delay(duration)
