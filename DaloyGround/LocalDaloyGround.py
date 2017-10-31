@@ -24,7 +24,6 @@ def led(pin, on = True):
 
 def startup():
 	global duration, lcd
-	GPIO.setmode(GPIO.BOARD)
 	for l in leds:
 		GPIO.setup(l, GPIO.OUT)
 	led(leds[0]) # red light during initialization
