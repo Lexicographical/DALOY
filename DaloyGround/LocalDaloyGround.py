@@ -22,9 +22,11 @@ def blink(pins, count = 0):
 	for i in range(count):
 		for pin in pins:
 			GPIO.output(pin, True)
+			delay(0.2)
 		delay(duration)
 		for pin in pins:
 			GPIO.output(pin, False)
+			delay(0.2)
 		delay(duration)
 
 def startup():
