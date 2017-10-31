@@ -20,13 +20,19 @@ def blink(pins, count = 0):
 	if pins is not list:
 		pins = [pins]
 	for i in range(count):
+		count = 0
 		for pin in pins:
+			if count == 0:
+				count += 1
+				delay(0.2)
 			GPIO.output(pin, True)
-			delay(0.5)
 		delay(duration)
+		count = 0
 		for pin in pins:
+			if count == 0:
+				count += 1
+				delay(0.2)
 			GPIO.output(pin, False)
-			delay(0.5)
 
 def startup():
 	global duration
