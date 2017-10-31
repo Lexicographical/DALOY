@@ -1,8 +1,6 @@
 import RPi.GPIO as GPIO
 import time
 
-leds = [11, 13, 19, 21, 23]
-
 def led(pins, on = True):
 	if pins is not list:
 		pins = [pins]
@@ -19,13 +17,8 @@ def shutdown():
 	GPIO.cleanup()
 
 startup()
-cmd = raw_input("RGB & Power: ")
+cmd = raw_input("Pin & Power: ")
 while cmd != "exit":
-	toks = cmd.split(" ")
-	pin = 19
-	if toks[0] == "g":
-		pin = 21
-	elif toks[0] == "b":
-		pin = 23
-	GPIO.output(pin, int(toks[1]))
-	cmd = raw_input("RGB & Power: ")
+	pin, power = [int(i) for i in cmd.split(" ")]
+	GPIO.output(pin, power)
+	cmd = raw_input("Pin & Power: ")
