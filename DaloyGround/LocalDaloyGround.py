@@ -55,6 +55,7 @@ def showIP():
 	lcd.clear()
 	lcd.message("IP Address:\n")
 	lcd.message(ipstr)
+	delay(5)
 
 startup()
 writeFile()
