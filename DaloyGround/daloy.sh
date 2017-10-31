@@ -1,4 +1,2 @@
-cd /
-cd "/home/pi/Desktop/ProjectDaloy/DaloyGround/"
-sudo python LocalDaloyGround.py
-cd /
+#!/bin/bash
+sudo /usr/bin/python /home/pi/Desktop/ProjectDaloy/DaloyGround/LocalDaloyGround.py
