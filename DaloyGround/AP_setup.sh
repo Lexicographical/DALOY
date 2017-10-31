@@ -15,8 +15,8 @@ if [[ $# -lt 1 ]];
 	exit
 fi
 
-APPASS="$1"
-APSSID="rPi3"
+APPASS="daloy12345"
+APSSID="ProjectDaloy"
 
 if [[ $# -eq 2 ]]; then
 	APSSID=$2
