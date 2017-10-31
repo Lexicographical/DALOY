@@ -2,8 +2,8 @@ import RPi.GPIO as GPIO
 import time
 import commands
 
-leds = [11, 13, 19, 21, 23]
-# red, green, rgb_red, rgb_green, rgb_blue
+leds = [11, 13, 23, 21, 19]
+# red, green, rgb_blue, rgb_green, rgb_red
 duration = 0.5
 
 def delay(n):
@@ -77,9 +77,9 @@ def blinkIP():
 		print([h, t, o])
 		runled(leds)
 		led(leds[0])
-		blink(leds[2], h)
+		blink(leds[4], h)
 		blink(leds[3], t)
-		blink(leds[4], o)
+		blink(leds[2], o)
 		runled(leds)
 		led(leds[0])
 
