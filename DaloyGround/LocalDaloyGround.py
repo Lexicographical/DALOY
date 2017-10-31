@@ -15,6 +15,14 @@ def led(pins, on = True):
 	for pin in pins:
 		GPIO.output(pin, on)
 
+def runled(pins):
+	for pin in pins:
+		GPIO.output(pin, True)
+		delay(0.2)
+	for pin in pins[::-1]:
+		GPIO.output(pin, False)
+		delay(0.2)
+
 def blink(pins, count = 0):
 	global duration
 	if pins is not list:
@@ -67,11 +75,13 @@ def blinkIP():
 		t = (octet % 100) / 10
 		o = (octet % 10)
 		print([h, t, o])
-		blink(leds[4:1:-1])
+		runled(leds)
+		led(leds[0])
 		blink(leds[2], h)
 		blink(leds[3], t)
 		blink(leds[4], o)
-		blink(leds[4:1:-1])
+		runled(leds)
+		led(leds[0])
 
 startup()
 writeFile()
