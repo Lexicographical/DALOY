@@ -3,17 +3,17 @@ from Adafruit_CharLCD import Adafruit_CharLCD
 import time
 import commands
 
-lcd_rs         = 22  # Note this might need to be changed to 21 for older revision Pi's.
-lcd_en        = 24
-lcd_d4        = 31
-lcd_d5        = 33
-lcd_d6        = 35
-lcd_d7        = 37
-lcd_backlight = 26
+lcd_rs         = 25  # Note this might need to be changed to 21 for older revision Pi's.
+lcd_en        = 8
+lcd_d4        = 6
+lcd_d5        = 13
+lcd_d6        = 19
+lcd_d7        = 26
+lcd_backlight = 7
 lcd = None
 
 duration = 0.5
-leds = [11, 13, 23, 21, 19]
+leds = [17, 27, 11, 9, 10]
 # red, green, rgb_blue, rgb_green, rgb_red
 
 def delay(n):
@@ -28,7 +28,7 @@ def startup():
 	for l in leds:
 		GPIO.setup(l, GPIO.OUT)
 	led(leds[0]) # red light during initialization
-	
+
 	lcd = Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, 16, 2, lcd_backlight)
 	lcd.clear()
 	lcd.message("Initializing...")
