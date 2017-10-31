@@ -8,8 +8,19 @@ if [ "$EUID" -ne 0 ]
 	exit
 fi
 
+if [[ $# -lt 1 ]]; 
+	then echo "You need to pass a password!"
+	echo "Usage:"
+	echo "sudo $0 yourChosenPassword [apName]"
+	exit
+fi
+
 APPASS="daloy12345"
 APSSID="ProjectDaloy"
+
+if [[ $# -eq 2 ]]; then
+	APSSID=$2
+fi
 
 apt-get remove --purge hostapd -yqq
 apt-get update -yqq

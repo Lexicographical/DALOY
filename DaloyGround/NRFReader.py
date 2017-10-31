@@ -17,7 +17,22 @@ class NRFReader:
 		radio.openReadingPipe(1, uuid)
 
 	def run(self):
-		print("Hello")
+		radio.startListening()
+
+		c=1
+		while True:
+		    akpl_buf = [c,1, 2, 3,4,5,6,7,8,9,0,1, 2, 3,4,5,6,7,8]
+		    pipe = [0]
+		    # wait for incoming packet from transmitter
+		    while not radio.available(pipe):
+		        time.sleep(10000/1000000.0)
+
+		    recv_buffer = []
+		    radio.read(recv_buffer, radio.getDynamicPayloadSize())
+		    print recv_buffer
+		    c = c + 1
+		    if (c&1) == 0:    # queue a return payload every alternate time
+		        radio.writeAckPayload(1, akpl_buf, len(akpl_buf))
 
 	def start(self):
 		thread = Thread(target=self.run)
