@@ -69,14 +69,14 @@ def blinkIP():
 	print(ipstr)
 	octets = [int(i) for i in ipstr.split(".")]
 	print(octets)
+	runled(leds)
+	led(leds[0])
 	for octet in octets:
 		blink(leds)
 		h = octet / 100
 		t = (octet % 100) / 10
 		o = (octet % 10)
 		print([h, t, o])
-		runled(leds)
-		led(leds[0])
 		blink(leds[4], h)
 		blink(leds[3], t)
 		blink(leds[2], o)
