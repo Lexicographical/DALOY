@@ -26,6 +26,7 @@ def startup():
 	global duration, lcd
 	for l in leds:
 		GPIO.setup(l, GPIO.OUT)
+	led(leds, False) # Turn off old lights
 	led(leds[0]) # red light during initialization
 
 	lcd = Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, 16, 2, lcd_backlight)
@@ -37,8 +38,6 @@ def shutdown():
 	global duration
 	led(leds, False)
 	led(leds[1]) # green light after initialization
-	delay(duration)
-	led(leds[1], False)
 	GPIO.cleanup()
 
 def writeFile():
