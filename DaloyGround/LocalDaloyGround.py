@@ -1,49 +1,24 @@
 import RPi.GPIO as GPIO
+from Adafruit_CharLCD import Adafruit_CharLCD
 import time
 import commands
 
+lcd = Adafruit_CharLCD()
+duration = 0.5
 leds = [11, 13, 23, 21, 19]
 # red, green, rgb_blue, rgb_green, rgb_red
-duration = 0.5
 
 def delay(n):
 	time.sleep(n)
 
-def led(pins, on = True):
-	if pins is not list:
-		pins = [pins]
-	for pin in pins:
-		GPIO.output(pin, on)
-
-def runled(pins):
-	for pin in pins:
-		GPIO.output(pin, True)
-		delay(0.2)
-	for pin in pins[::-1]:
-		GPIO.output(pin, False)
-		delay(0.2)
-
-def blink(pins, count = 0):
-	global duration
-	if pins is not list:
-		pins = [pins]
-	for i in range(count):
-		count = 0
-		for pin in pins:
-			if count == 0:
-				count += 1
-				delay(0.2)
-			GPIO.output(pin, True)
-		delay(duration)
-		count = 0
-		for pin in pins:
-			if count == 0:
-				count += 1
-				delay(0.2)
-			GPIO.output(pin, False)
+def led(pin, on = True):
+	GPIO.output(pin, on)
 
 def startup():
 	global duration
+	lcd.begin(16,2)
+	lcd.clear()
+	lcd.message("Initializing...")
 	GPIO.setmode(GPIO.BOARD)
 	for l in leds:
 		GPIO.setup(l, GPIO.OUT)
@@ -52,6 +27,8 @@ def startup():
 
 def shutdown():
 	global duration
+	lcd.clear()
+	lcd.message("Shutdown...")
 	led(leds, False)
 	led(leds[1]) # green light after initialization
 	delay(duration)
@@ -64,26 +41,14 @@ def writeFile():
 	f.write(str(time.time()))
 	f.close()
 
-def blinkIP():
+def showIP():
 	ipstr = commands.getoutput("hostname -I")
 	print(ipstr)
-	octets = [int(i) for i in ipstr.split(".")]
-	print(octets)
-	runled(leds)
-	led(leds[0])
-	for octet in octets:
-		blink(leds)
-		h = octet / 100
-		t = (octet % 100) / 10
-		o = (octet % 10)
-		print([h, t, o])
-		blink(leds[4], h)
-		blink(leds[3], t)
-		blink(leds[2], o)
-		runled(leds)
-		led(leds[0])
+	lcd.clear()
+	lcd.message("IP Address:\n")
+	lcd.message(ipstr)
 
 startup()
 writeFile()
-blinkIP()
+showIP()
 shutdown()
