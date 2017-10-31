@@ -58,16 +58,15 @@ def blinkIP():
 	print(octets)
 	for octet in octets:
 		blink(leds)
-		for i in range(octet):
-			h = i / 100
-			t = (i % 100) / 10
-			o = (i % 10)
-			print([h, t, o])
-			blink(leds[2:5])
-			blink(leds[2], h)
-			blink(leds[3], t)
-			blink(leds[4], o)
-			blink(leds[2:5])
+		h = octet / 100
+		t = (octet % 100) / 10
+		o = (octet % 10)
+		print([h, t, o])
+		blink(leds[4:1:-1])
+		blink(leds[2], h)
+		blink(leds[3], t)
+		blink(leds[4], o)
+		blink(leds[4:1:-1])
 
 startup()
 writeFile()
