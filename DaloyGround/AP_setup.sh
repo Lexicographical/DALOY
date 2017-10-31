@@ -32,7 +32,7 @@ wpa_pairwise=CCMP
 rsn_pairwise=CCMP
 wpa_passphrase=$APPASS
 ssid=$APSSID
-ieee80211n=1
+ieee80211ac=1
 wmm_enabled=1
 ht_capab=[HT40][SHORT-GI-20][DSSS_CCK-40]
 EOF
