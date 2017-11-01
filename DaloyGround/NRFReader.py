@@ -1,38 +1,43 @@
+import DaloyGround
 from nrf24 import NRF24
 from threading import Thread
-
+from struct import *
 
 uuid = 0xCB15CA;
+Packet = namedtuple("Packet", ["temperature", "humidity", "pressure", "altitude"])
+
 
 class NRFReader:
 	def __init__(self):
 		self.radio = NRF24()
-		radio = NRF24()
-		radio.begin(1,0,"P9_23", "P9_24") #Set CE and IRQ pins
-		radio.setRetries(15,15)
-		radio.setPayloadSize(32)
-		radio.setChannel(0x60)
-		radio.setDataRate(NRF24.BR_250KBPS)
-		radio.setPALevel(NRF24.PA_MAX)
-		radio.openReadingPipe(1, uuid)
+		self.radio.begin(1, 0, "P8_23", "P8_24")
+
+		self.radio.setRetries(3, 5)
+
+		self.radio.setPayloadSize(32)
+		self.radio.setChannel(0x60)
+		self.radio.setDataRate(NRF24.BR_250KBPS)
+		self.radio.setPALevel(NRF24.PA_MAX)
+
+		self.radio.setAutoAck(1)
+		self.radio.openReadingPipe(1, uuid)
+
+		self.radio.startListening()
+		self.radio.stopListening()
+		self.radio.printDetails()
 
 	def run(self):
 		radio.startListening()
-
-		c=1
 		while True:
-		    akpl_buf = [c,1, 2, 3,4,5,6,7,8,9,0,1, 2, 3,4,5,6,7,8]
-		    pipe = [0]
-		    # wait for incoming packet from transmitter
-		    while not radio.available(pipe):
-		        time.sleep(10000/1000000.0)
-
-		    recv_buffer = []
-		    radio.read(recv_buffer, radio.getDynamicPayloadSize())
-		    print recv_buffer
-		    c = c + 1
-		    if (c&1) == 0:    # queue a return payload every alternate time
-		        radio.writeAckPayload(1, akpl_buf, len(akpl_buf))
+			pipe = [0]
+			while not radio.available(pipe):
+				time.sleep(10000/1000000.0)
+			recv_buffer = []
+			radio.read(recv_buffer, radio.getDynamicPayloadSize())
+			packet = unpack("<ffff", recv_buffer)
+			DaloyGround.instance.registerEntry(packet)
+			DaloyGround.instance.update();
+			print recv_buffer
 
 	def start(self):
 		thread = Thread(target=self.run)

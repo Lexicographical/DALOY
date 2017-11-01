@@ -1,3 +1,4 @@
+import DaloyGround
 from flask import Flask
 import json
 
@@ -11,5 +12,12 @@ class WebServer:
 		global instance
 		@app.route("/")
 		def index():
-			temp = hum = pressure = alt = 0
+			return """<h1>Project Daloy Web Server</h1>"""
+		@app.route("/daloy/latest")
+		def index():
+			temp, hum, pressure, alt = DaloyGround.instance.getLatestEntry()
 			return json.dumps({"temperature": temp, "humidity": hum, "pressure": pressure, "altitude": alt});
+		@app.route("/daloy/all")
+		def index():
+			entries = DaloyGround.instance.getAllEntries()
+			return json.dumps(entries)
