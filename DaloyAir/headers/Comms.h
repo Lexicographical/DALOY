@@ -3,13 +3,17 @@
 
 class Comms {
   public:
-  static Comms* getInstance() {
-  	static Comms instance;
-  	return &instance;
-  }
+	static Comms* getInstance() {
+		static Comms instance;
+		return &instance;
+	}
 
   private:
-  Comms();
+	Comms();
+	void send(Packet packet);
+	RF24* radio;
+	unsigned long currentMillis;
+	unsigned long prevMillis;
 };
 
 #endif

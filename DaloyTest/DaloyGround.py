@@ -1,10 +1,10 @@
-from NRFReader import NRFReader
-from WebServer import WebServer
+import NRFReader
+import WebServer
 
 class Singleton:
 	def __init__(self):
-		self.reader = NRFReader()
-		self.server = WebServer()
+		self.reader = NRFReader.NRFReader()
+		self.server = WebServer.WebServer()
 		self.packets = []
 		self.packetId = 0
 
@@ -29,6 +29,9 @@ class Singleton:
 		return self.packets
 
 instance = Singleton()
+
 if __name__ == "__main__":
+	print("Start main")
 	instance.initServer()
+	print("Proceeded")
 	instance.startListening()

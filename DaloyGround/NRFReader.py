@@ -1,11 +1,8 @@
-import DaloyGround
 from nrf24 import NRF24
 from threading import Thread
 from struct import *
 
 uuid = 0xCB15CA;
-Packet = namedtuple("Packet", ["temperature", "humidity", "pressure", "altitude"])
-
 
 class NRFReader:
 	def __init__(self):
@@ -29,6 +26,7 @@ class NRFReader:
 	def run(self):
 		radio.startListening()
 		while True:
+			import DaloyGround
 			pipe = [0]
 			while not radio.available(pipe):
 				time.sleep(10000/1000000.0)
@@ -36,7 +34,6 @@ class NRFReader:
 			radio.read(recv_buffer, radio.getDynamicPayloadSize())
 			packet = unpack("<ffff", recv_buffer)
 			DaloyGround.instance.registerEntry(packet)
-			DaloyGround.instance.update();
 			print recv_buffer
 
 	def start(self):

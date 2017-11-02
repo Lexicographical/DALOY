@@ -2,6 +2,7 @@
 #define SINGLETON_H
 
 #include "Constants.h"
+#include "Packet.h"
 #include "Comms.h"
 #include "Comms_U.h"
 #include "DroneController.h"
