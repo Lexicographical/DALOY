@@ -1,5 +1,8 @@
 from NRFReader import NRFReader
 from WebServer import WebServer
+from datetime import datetime
+from threading import Thread
+import os
 
 class Singleton:
 	def __init__(self):
@@ -8,10 +11,42 @@ class Singleton:
 		self.packets = []
 		self.packetId = 0
 
+		self.backupSize = 15 # once every 5 mins for 1Hz refresh rate
+		self.refreshRate = 1 # 1 Hz
+		self.clearCache = False
+
+		relPath = "data/Daloy " + str(datetime.now().strftime("%Y-%m-%d %H-%M-%S")) + ".csv"
+		self.fn = os.path.abspath(os.path.join(os.path.join(os.path.abspath(__file__), os.pardir), relPath))
+		dataFolder = os.path.abspath(os.path.join(os.path.abspath(self.fn), os.pardir))
+		if not os.path.exists(dataFolder):
+			os.makedirs(dataFolder)
+		file = open(self.fn, "w+")
+		file.write("Time (s),Temperature,Humidity,Pressure,Altitude\n")
+		file.flush()
+		file.close()
+		
+
 	def registerEntry(self, packet):
+		if self.clearCache:
+			self.packets[:] = []
+			self.clearCache = False
 		entry = {"id": self.packetId, "temperature": packet[0], "humidity": packet[1], "pressure": packet[2], "altitude": packet[3]}
 		self.packets.append(entry)
+		# flush cache
+		if self.packetId % self.backupSize == 0 and self.packetId > 0:
+			thread = Thread(target=self.backupData, args=(self.packets[:],))
+			thread.start()
+			self.clearCache = True
 		self.packetId += 1
+
+	def backupData(self, data):
+		file = open(self.fn, "a+")
+		for packet in data:
+			info = (packet["id"] * self.refreshRate, packet["temperature"], packet["humidity"], packet["pressure"], packet["altitude"])
+			file.write("{},{},{},{},{}\n".format(*info))
+		file.flush()
+		file.close()
+
 
 	def initServer(self):
 		self.server.initServer()
