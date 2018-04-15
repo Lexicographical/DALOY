@@ -5,8 +5,6 @@
 #include <nRF24L01.h>
 #include <RF24.h>
 
-const byte slaveAddress[5] = {'R','x','A','A','A'};
-
 Comms::Comms() {
 	this->radio = new radio(CE_PIN, CSN_PIN);
 	this->radio->begin();
