@@ -1,5 +1,4 @@
 #!/bin/bash
 sudo apt-get update
 pip install spidev
-git clone https://github.com/jpbarraca/pynrf24.git
-python pynrf24/setup.py
+sudo pip install -e git+https://github.com/jpbarraca/pynrf24.git#egg=nrf24
