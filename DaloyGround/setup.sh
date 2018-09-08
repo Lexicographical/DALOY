@@ -1,4 +1,4 @@
 #!/bin/bash
 sudo apt-get update
-pip install spidev
-sudo pip install -e git+https://github.com/jpbarraca/pynrf24.git#egg=nrf24
+sudo apt-get install hostapd dnsmasq
+pip install nobu
