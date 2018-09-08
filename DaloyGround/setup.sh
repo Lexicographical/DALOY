@@ -5,5 +5,9 @@ pip install nobu
 
 git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
 cd Adafruit_Python_SSD1306
-sudo python setup.py
-sudo python3 setup.py
+sudo python setup.py install
+sudo python3 setup.py install
+
+wget -O xctu.run ftp://ftp1.digi.com/support/utilities/40002880_R.run
+sudo chmod +x xctu.run
+sudo bash xctu.run
