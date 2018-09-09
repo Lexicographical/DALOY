@@ -1,5 +1,6 @@
 import time
 import Adafruit_SSD1306
+import commands
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -18,7 +19,10 @@ draw = ImageDraw.Draw(image)
 draw.rectangle((0, 0, w, h), outline=0, fill=0)
 
 font = ImageFont.truetype("res/PNova.ttf", 17)
+fontIP = ImageFont.truetype("res/PNova.ttf", 17)
+ip = commands.getoutput("hostname -I")
 draw.text((0, 0), "IP Address", font=font, fill=255)
+draw.text((0, 20), ip, font=font, fill=255)
 
 dsp.image(image)
 dsp.display()
