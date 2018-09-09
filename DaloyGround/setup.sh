@@ -1,7 +1,6 @@
 #!/bin/bash
 sudo apt-get update
 sudo apt-get install hostapd dnsmasq
-pip install pillow
 
 if [ ! -d "Adafruit_Python_SSD1306" ]; then
     git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
