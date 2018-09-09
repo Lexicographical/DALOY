@@ -14,7 +14,7 @@ dsp.display()
 
 w, h = dsp.width, dsp.height
 font = ImageFont.truetype("res/PNova.ttf", 17)
-fontIP = ImageFont.truetype("res/PNova.ttf", 17)
+fontIP = ImageFont.truetype("res/PNova.ttf", 20)
 image = Image.new('1', (w, h))
 draw = ImageDraw.Draw(image)
 
