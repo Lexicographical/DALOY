@@ -17,9 +17,8 @@ draw = ImageDraw.Draw(image)
 
 draw.rectangle((0, 0, w, h), outline=0, fill=0)
 
-font = ImageFont.truetype("res/PNova.ttf", 12)
-draw.text((5, 5), "Hello", font=font, fill=255)
-draw.text((5, 25), "World!", font=font, fill=255)
+font = ImageFont.truetype("res/PNova.ttf", 17)
+draw.text((0, 0), "IP Address", font=font, fill=255)
 
 dsp.image(image)
 dsp.display()
