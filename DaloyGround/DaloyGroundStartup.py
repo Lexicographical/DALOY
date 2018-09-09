@@ -1,7 +1,6 @@
 import time
 import Adafruit_SSD1306
 import commands
-from threading import Thread, Event
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -20,21 +19,9 @@ draw = ImageDraw.Draw(image)
 
 draw.rectangle((0, 0, w, h), outline=0, fill=0)
 
-class Looper(Thread):
-    def __init__(self, event):
-        Thread.__init__(self)
-        self.stopped = event
+ip = commands.getoutput("hostname -I")
+draw.text((0, 0), "IP Address", font=font, fill=255)
+draw.text((0, 20), ip, font=fontIP, fill=255)
 
-    def run(self):
-        global draw, dsp, image, font
-        while not self.stopped.wait(5):
-            ip = commands.getoutput("hostname -I")
-            draw.text((0, 0), "IP Address", font=font, fill=255)
-            draw.text((0, 20), ip, font=fontIP, fill=255)
-
-            dsp.image(image)
-            dsp.display()
-
-stopFlag = Event()
-thread = Looper(stopFlag)
-thread.start()
+dsp.image(image)
+dsp.display()
