@@ -10,7 +10,7 @@ dsp.begin()
 dsp.clear()
 dsp.display()
 
-w, h = dsp.width(), dsp.height()
+w, h = dsp.width, dsp.height
 
 image = Image.new('1', (w, h))
 draw = ImageDraw.Draw(image)
