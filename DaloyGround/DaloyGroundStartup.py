@@ -17,7 +17,7 @@ draw = ImageDraw.Draw(image)
 
 draw.rectangle((0, 0, w, h), outline=0, fill=0)
 
-font = ImageFont.load_default()
+font = ImageFont.truetype("res/PNova.ttf", 12)
 draw.text((5, 5), "Hello", font=font, fill=255)
 draw.text((5, 25), "World!", font=font, fill=255)
 
