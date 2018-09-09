@@ -10,4 +10,4 @@ if [ ! -d "Adafruit_Python_SSD1306" ]; then
     sudo python3 setup.py install
 fi
 
-sudo echo "@python ~/Desktop/ProjectDaloy/DaloyGround/DaloyGroundStartup.py" > ~/.config/lxsession/LXDE-pi/autostart
+sudo echo "@python3 ~/Desktop/ProjectDaloy/DaloyGround/DaloyGroundStartup.py" > ~/.config/lxsession/LXDE-pi/autostart
