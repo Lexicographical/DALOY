@@ -11,7 +11,10 @@ class Reader:
     def run(self):
         while True:
             data = self.reader.readline().decode()
-            val = [float(i) for i in data.split(",")]
+            try:
+                val = [float(i) for i in data.split(",")]
+            except ValueError:
+                print("Non-numeric text detected! Text: ", data)
             if self.debug:
                 print(val)
             else:
