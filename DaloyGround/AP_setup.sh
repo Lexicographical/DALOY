@@ -11,10 +11,10 @@ fi
 APPASS="daloy12345"
 APSSID="ProjectDaloy"
 
-apt-get remove --purge hostapd -yqq
-apt-get update -yqq
-apt-get upgrade -yqq
-apt-get install hostapd dnsmasq -yqq
+#apt-get remove --purge hostapd -yqq
+#apt-get update -yqq
+#apt-get upgrade -yqq
+#apt-get install hostapd dnsmasq -yqq
 
 cat > /etc/dnsmasq.conf <<EOF
 interface=wlan0

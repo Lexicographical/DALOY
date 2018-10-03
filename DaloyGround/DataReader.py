@@ -34,7 +34,7 @@ class NRFReader:
 			radio.read(recv_buffer, radio.getDynamicPayloadSize())
 			packet = unpack("<ffff", recv_buffer)
 			DaloyGround.instance.registerEntry(packet)
-			print recv_buffer
+			print(recv_buffer)
 
 	def start(self):
 		thread = Thread(target=self.run)
