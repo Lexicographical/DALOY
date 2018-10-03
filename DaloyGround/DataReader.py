@@ -1,5 +1,4 @@
 import serial
-import DaloyGround
 import time
 from threading import Thread
 
@@ -11,6 +10,7 @@ class Reader:
     def run(self):
         while True:
             if self.reader.available():
+                import DaloyGround
                 data = self.reader.readline().decode()
                 val = [float(i) for i in data.split(",")]
                 DaloyGround.instance.registerEntry(tuple(val))
