@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get update
-sudo apt-get install hostapd dnsmasq
+sudo apt-get install hostapd dnsmasq python-serial
 
 if [ ! -d "Adafruit_Python_SSD1306" ]; then
     git clone https://github.com/adafruit/Adafruit_Python_SSD1306.git
@@ -9,4 +9,5 @@ if [ ! -d "Adafruit_Python_SSD1306" ]; then
     sudo python3 setup.py install
 fi
 
-sudo echo "@python3 ~/Desktop/ProjectDaloy/DaloyGround/DaloyGroundStartup.py" >> ~/.config/lxsession/LXDE-pi/autostart
+sudo pip3 install digi-xbee pyserial
+# enable api mode for the xbee

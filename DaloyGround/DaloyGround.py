@@ -1,4 +1,4 @@
-from NRFReader import NRFReader
+from DataReader import Reader
 from WebServer import WebServer
 from DataIO import DataIO
 from threading import Thread
