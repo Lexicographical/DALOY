@@ -10,15 +10,14 @@ class Reader:
 
     def run(self):
         while True:
-            if self.reader.available():
-                data = self.reader.readline().decode()
-                val = [float(i) for i in data.split(",")]
-                if self.debug:
-                    print(val)
-                else:
-                    import DaloyGround
-                    DaloyGround.instance.registerEntry(tuple(val))
-                time.sleep(0.3)
+            data = self.reader.readline().decode()
+            val = [float(i) for i in data.split(",")]
+            if self.debug:
+                print(val)
+            else:
+                import DaloyGround
+                DaloyGround.instance.registerEntry(tuple(val))
+            time.sleep(0.3)
 
     def start(self):
         thread = Thread(target=self.run)
