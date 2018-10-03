@@ -6,7 +6,7 @@ import os
 
 class Singleton:
 	def __init__(self):
-		self.reader = NRFReader()
+		self.reader = Reader()
 		self.server = WebServer()
 		self.io = DataIO()
 		self.packets = []

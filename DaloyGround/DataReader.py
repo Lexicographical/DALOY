@@ -3,7 +3,7 @@ import DaloyGround
 import time
 from threading import Thread
 
-class XBeeReader:
+class Reader:
     def __init__(self):
         self.reader = serial.Serial("/dev/ttyUSB0", baudrate=9600)
         print("Initialized XBee Reader")
