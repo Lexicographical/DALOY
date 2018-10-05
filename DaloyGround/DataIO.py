@@ -8,7 +8,7 @@ class DataIO:
 
 		hRP = "data/DaloyHangin_" + str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S")) + ".csv"
 		tRP = "data/DaloyTubig_" + str(datetime.now().strftime("%Y-%m-%d_%H-%M-%S")) + ".csv"
-		self.fn = []
+		self.fn = [None, None]
 		self.fn[0] = os.path.abspath(os.path.join(os.path.join(os.path.abspath(__file__), os.pardir), hRP))
 		self.fn[1] = os.path.abspath(os.path.join(os.path.join(os.path.abspath(__file__), os.pardir), tRP))
 		dataFolder = os.path.abspath(os.path.join(os.path.abspath(self.fn[0]), os.pardir))

@@ -1,4 +1,4 @@
-from DataReader import HanginReader, TubigReader
+from DataReader import HanginReader, TubigCommunicator
 from WebServer import WebServer
 from DataIO import DataIO
 from threading import Thread
@@ -10,7 +10,7 @@ TUBIG = 1
 class Singleton:
 	def __init__(self):
 		self.hangin = HanginReader()
-		self.tubig = TubigReader()
+		self.tubig = TubigCommunicator()
 		self.server = WebServer()
 		self.io = DataIO()
 
