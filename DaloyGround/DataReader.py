@@ -1,6 +1,8 @@
 import serial
 import time
 from threading import Thread
+import random
+import Constants
 
 class HanginReader:
     def __init__(self, debug=False):
@@ -33,6 +35,9 @@ class TubigCommunicator:
 
     def run(self):
         while True:
+            if Constants.relayChanged:
+                self.reader.write(Constants.relay + "\n")
+                Constants.relayChanged = False
             data = self.reader.readline().decode()
             try:
                 val = [float(i) for i in data.split(",")]

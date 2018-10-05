@@ -29,7 +29,7 @@ class DataIO:
 		file = open(self.fn[type], "a+")
 		for packet in packets[type]:
 			# hanginPacket if type == 0 else tubigPacket
-			info = (packet["id"], packet["temperature"], packet["humidity"], packet["pressure"], packet["altitude"]) if type == 0 else (packet["id"], packet["temperature"], packet["abs_temperature"], packet["rel_temperature"], packet["pH"])
+			info = (packet["id"], packet["temperature"], packet["humidity"], packet["pressure"], packet["altitude"]) if type == 0 else (packet["id"], packet["temperature"], packet["abs_pressure"], packet["pH"])
 			file.write(("{},{},{},{},{}\n" if type == 0 else "{},{},{},{}\n").format(*info))
 		file.flush()
 		file.close()

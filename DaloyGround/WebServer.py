@@ -1,6 +1,7 @@
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 import json
 from threading import Thread
+import Constants
 
 class WebServer:
 	def initServer(self):
@@ -29,3 +30,11 @@ class RequestHandler (BaseHTTPRequestHandler):
 			self.wfile.write(str.encode(json.dumps(DaloyGround.instance.getLatestEntry(type=1))))
 		elif self.path == "/daloy/tubig/all":
 			self.wfile.write(str.encode(json.dumps(DaloyGround.instance.getAllEntries(type=1))))
+		elif self.path == "/daloy/tubig/open":
+		    self.wfile.write("Opening solenoid valve")
+		    Constants.relay = "Open"
+		    relayChanged = True
+	    elif self.path == "/daloy/tubig/close":
+	        self.wfile.write("Closing solenoid valve")
+	        Constants.relay = "Close"
+	        relayChanged = True

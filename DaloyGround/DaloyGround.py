@@ -29,15 +29,15 @@ class Singleton:
 				self.clearCache(type)
 				self.clear[type] = False
 		if type == HANGIN:
-			entry = {"id": self.packetId[type], "temperature": packet[0], "humidity": packet[1], "pressure": packet[2], "altitude": packet[3]}
+			entry = {"source": "Hangin", "id": self.packetId[type], "temperature": packet[0], "humidity": packet[1], "pressure": packet[2], "altitude": packet[3]}
 			self.packets[type].append(entry)
 			# flush cache
 		elif type == TUBIG:
-			entry = {"id": self.packetId[type], "temperature": packet[0], "abs_pressure": packet[1], "pH": packet[2]}
+			entry = {"source": "Tubig", "id": self.packetId[type], "temperature": packet[0], "abs_pressure": packet[1], "pH": packet[2]}
 			self.packets[type].append(entry)
 		for i in range(2):
 			if len(self.packets[i]) == self.backupSize and self.packetId > 0:
-					thread = Thread(target=self.io.saveData, args=(tyself.packets))
+					thread = Thread(target=self.io.saveData, args=(type, self.packets))
 					thread.start()
 					self.clear[type] = True
 		self.packetId[type] += 1
