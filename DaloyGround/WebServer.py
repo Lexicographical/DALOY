@@ -21,7 +21,11 @@ class RequestHandler (BaseHTTPRequestHandler):
 		self.end_headers()
 		if self.path == "/":
 			self.wfile.write(str.encode("Hello World!"))
-		elif self.path == "/daloy/latest":
-			self.wfile.write(str.encode(json.dumps(DaloyGround.instance.getLatestEntry())))
-		elif self.path == "/daloy/all":
-			self.wfile.write(str.encode(json.dumps(DaloyGround.instance.getAllEntries())))
+		elif self.path == "/daloy/hangin/latest":
+			self.wfile.write(str.encode(json.dumps(DaloyGround.instance.getLatestEntry(type=0))))
+		elif self.path == "/daloy/hangin/all":
+			self.wfile.write(str.encode(json.dumps(DaloyGround.instance.getAllEntries(type=0))))
+		elif self.path == "/daloy/tubig/latest":
+			self.wfile.write(str.encode(json.dumps(DaloyGround.instance.getLatestEntry(type=1))))
+		elif self.path == "/daloy/tubig/all":
+			self.wfile.write(str.encode(json.dumps(DaloyGround.instance.getAllEntries(type=1))))

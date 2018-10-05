@@ -1,26 +1,20 @@
-#include <Arduino.h>
-#include <Wire.h>
-#include <SFE_BMP180.h>
 #include <DHT.h>
-#include <SoftwareSerial.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BMP085_U.h>
 
-#define DEBUG
+//#define DEBUG
 int DHTPIN = A2;
 
 #ifndef DEBUG
-  SFE_BMP180 bmp;
+  Adafruit_BMP085_Unified bmp = Adafruit_BMP085_Unified(10085);
   DHT dht(DHTPIN, DHT11); 
 #endif
 
-SoftwareSerial XBee(2,3);
-
-float hum, heatIndex;
-double temp, pressure;
+float hum, alt, temp, pressure;
 
 void setup()
 {
   Serial.begin(9600);
-  XBee.begin(9600);
   #ifndef DEBUG
     dht.begin();
     bmp.begin();
@@ -30,9 +24,10 @@ void setup()
 void loop()
 {
   #ifndef DEBUG
-    queryBMP();
+    bmp.getPressure(&pressure);
+    bmp.getTemperature(&temp);
     hum = dht.readHumidity();
-    heatIndex = dht.computeHeatIndex(temp, hum, false);
+    alt = bmp.pressureToAltitude(101325, pressure);
   #endif
 
   #ifdef DEBUG
@@ -47,30 +42,12 @@ void loop()
   data += ",";
   data += hum;
   data += ",";
-  data += heatIndex;
-  data += ",";
   data += pressure;
+  data += ",";
+  data += alt;
   data += "\n";
 
-  XBee.print(data);
-  Serial.println(data);
+  Serial.print(data);
   
   delay(500);
 }
-
-#ifndef DEBUG
-  void queryBMP() {
-    char status = bmp.startTemperature();
-    delay(status);
-    status = bmp.getTemperature(temp);
-    if (status == 0) {
-  //    Serial.println("Error getting temperature!");
-    }
-    status = bmp.startPressure(3);
-    delay(status);
-    status = bmp.getPressure(pressure, temp);
-    if (status == 0) {
-  //    Serial.println("Error getting pressure!");
-    }
-  }
-#endif
