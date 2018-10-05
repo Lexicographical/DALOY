@@ -3,10 +3,11 @@ from WebServer import WebServer
 from DataIO import DataIO
 from threading import Thread
 import os
+import Constants
 
 class Singleton:
 	def __init__(self):
-		self.reader = Reader()
+		self.reader = Reader(False)
 		self.server = WebServer()
 		self.io = DataIO()
 		self.packets = []
@@ -22,6 +23,7 @@ class Singleton:
 		if self.clear:
 			self.clearCache()
 			self.clear = False
+		print("Registered Packet!", packet)
 		entry = {"id": self.packetId, "temperature": packet[0], "humidity": packet[1], "pressure": packet[2], "altitude": packet[3]}
 		self.packets.append(entry)
 		# flush cache
@@ -48,7 +50,8 @@ class Singleton:
 		csv = self.io.readData()
 		return csv
 
-instance = Singleton()
+
 if __name__ == "__main__":
-	instance.initServer()
-	instance.startListening()
+	Constants.instance = Singleton()
+	Constants.instance.initServer()
+	Constants.instance.startListening()
