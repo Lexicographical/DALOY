@@ -38,3 +38,10 @@ class RequestHandler (BaseHTTPRequestHandler):
 	        self.wfile.write("Closing solenoid valve")
 	        Constants.relay = "Close"
 	        relayChanged = True
+		elif self.path.startsWith("/daloy/tubig/rate/")
+			rate = self.path[18:]
+			try:
+				Constants.rate = int(rate)
+			except ValueError:
+				print("Invalid rate found: " + str(rate))
+			
