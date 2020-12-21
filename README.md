@@ -4,4 +4,4 @@
 <br>
 For more details, see <a href = "https://gramliu.gitlab.io/ProjectDaloyWeb">Project Information</a>
 <h1>Proposed Design</h1>
-![](Project Daloy.png)
+![Picture](ProjectDaloy.png)
